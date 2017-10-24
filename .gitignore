@@ -25,3 +25,8 @@ DerivedData/
 # mac
 .DS_Store
 
+# react native
+
+*.jsbundle
+*.jsbundle.meta
+
