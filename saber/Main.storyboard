@@ -10,6 +10,54 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Sefirot-->
+        <scene sceneID="Z6a-ya-00o">
+            <objects>
+                <viewController title="Sefirot" id="HzA-iR-4AW" customClass="SefirotViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Z33-1s-XIi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kE6-mb-GYh">
+                                <rect key="frame" x="164" y="362" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="9dh-Vj-Dfd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sefirot" id="B0E-uw-yhZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D9K-7Y-QDw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="-1102"/>
+        </scene>
+        <!--Magus-->
+        <scene sceneID="bwh-jA-i98">
+            <objects>
+                <viewController title="Magus" id="hu8-BZ-Va5" customClass="MagusViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z31-th-LU2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJR-t0-gUu">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="A4k-Fs-iIX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Magus" id="iE2-PN-Mon"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Ot-4J-rxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="439"/>
+        </scene>
         <!--second-->
         <scene sceneID="6hB-eH-CS1">
             <objects>
@@ -36,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P8-HL-rMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073" y="303"/>
+            <point key="canvasLocation" x="2100" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rvh-F7-QLZ">
@@ -69,7 +117,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0M-Se-Erh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="303"/>
+            <point key="canvasLocation" x="3228" y="-30"/>
         </scene>
         <!--Item-->
         <scene sceneID="tCZ-Ed-aC8">
@@ -86,7 +134,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a01-7r-Vf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="-388"/>
+            <point key="canvasLocation" x="2841" y="-542"/>
         </scene>
         <!--daily-->
         <scene sceneID="XqT-sX-9Gh">
@@ -113,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfo-Tt-z45" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074" y="-388"/>
+            <point key="canvasLocation" x="2100" y="-555"/>
         </scene>
         <!--main-->
         <scene sceneID="QmH-K9-jdE">
@@ -126,16 +174,39 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="G3l-W5-bvP" kind="relationship" relationship="viewControllers" id="Dxn-Ed-Chv"/>
-                        <segue destination="nLu-ML-ogN" kind="relationship" relationship="viewControllers" id="Ch6-Dd-IJT"/>
+                        <segue destination="HzA-iR-4AW" kind="relationship" relationship="viewControllers" id="s74-YA-Get"/>
+                        <segue destination="OLB-P0-aRh" kind="relationship" relationship="viewControllers" id="opl-KB-6BR"/>
+                        <segue destination="hu8-BZ-Va5" kind="relationship" relationship="viewControllers" id="E5n-qs-YQU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8C-Y9-qSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-622" y="11"/>
         </scene>
+        <!--Jarvis-->
+        <scene sceneID="kTz-sT-TGl">
+            <objects>
+                <viewController title="Jarvis" id="OLB-P0-aRh" customClass="JarvisViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NlC-gc-dM3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sw8-M7-hGD">
+                                <rect key="frame" x="139" y="318" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="JfV-xc-NbA"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Jarvis" id="tNW-Sx-6ON"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBG-el-CZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="730" y="-331"/>
+        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ch6-Dd-IJT"/>
-    </inferredMetricsTieBreakers>
 </document>

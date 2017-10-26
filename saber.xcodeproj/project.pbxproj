@@ -24,6 +24,9 @@
 		07B503261F99BF160032B791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B503241F99BF160032B791 /* ViewController.m */; };
 		07B503271F99BF160032B791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B503241F99BF160032B791 /* ViewController.m */; };
 		07B503281F99BF160032B791 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B503241F99BF160032B791 /* ViewController.m */; };
+		07EA536E1FA2535B004C4804 /* SefirotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EA536D1FA2535B004C4804 /* SefirotViewController.m */; };
+		07EA53921FA2536B004C4804 /* JarvisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EA53911FA2536B004C4804 /* JarvisViewController.m */; };
+		07EA53951FA2537E004C4804 /* MagusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07EA53941FA2537E004C4804 /* MagusViewController.m */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -314,6 +317,12 @@
 		07B503121F99BE360032B791 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = saber/Main.storyboard; sourceTree = "<group>"; };
 		07B503231F99BF160032B791 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = saber/ViewController.h; sourceTree = "<group>"; };
 		07B503241F99BF160032B791 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = saber/ViewController.m; sourceTree = "<group>"; };
+		07EA536C1FA2535B004C4804 /* SefirotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SefirotViewController.h; path = saber/SefirotViewController.h; sourceTree = "<group>"; };
+		07EA536D1FA2535B004C4804 /* SefirotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SefirotViewController.m; path = saber/SefirotViewController.m; sourceTree = "<group>"; };
+		07EA53901FA2536B004C4804 /* JarvisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JarvisViewController.h; path = saber/JarvisViewController.h; sourceTree = "<group>"; };
+		07EA53911FA2536B004C4804 /* JarvisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JarvisViewController.m; path = saber/JarvisViewController.m; sourceTree = "<group>"; };
+		07EA53931FA2537E004C4804 /* MagusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MagusViewController.h; path = saber/MagusViewController.h; sourceTree = "<group>"; };
+		07EA53941FA2537E004C4804 /* MagusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MagusViewController.m; path = saber/MagusViewController.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* saber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saber.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -463,6 +472,12 @@
 				07B503241F99BF160032B791 /* ViewController.m */,
 				076DCF051F9E627300E8F59A /* ViewController2.h */,
 				076DCF061F9E627300E8F59A /* ViewController2.m */,
+				07EA536C1FA2535B004C4804 /* SefirotViewController.h */,
+				07EA536D1FA2535B004C4804 /* SefirotViewController.m */,
+				07EA53901FA2536B004C4804 /* JarvisViewController.h */,
+				07EA53911FA2536B004C4804 /* JarvisViewController.m */,
+				07EA53931FA2537E004C4804 /* MagusViewController.h */,
+				07EA53941FA2537E004C4804 /* MagusViewController.m */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -1091,10 +1106,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07EA53951FA2537E004C4804 /* MagusViewController.m in Sources */,
 				07B503251F99BF160032B791 /* ViewController.m in Sources */,
+				07EA536E1FA2535B004C4804 /* SefirotViewController.m in Sources */,
 				076DCF071F9E627300E8F59A /* ViewController2.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				07EA53921FA2536B004C4804 /* JarvisViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
