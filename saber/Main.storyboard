@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZEd-Nz-G0c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z5C-QT-23q">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,6 +37,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P8-HL-rMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1073" y="303"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rvh-F7-QLZ">
+            <objects>
+                <navigationController id="Z5C-QT-23q" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ef6-60-uml">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZEd-Nz-G0c" kind="relationship" relationship="rootViewController" id="Lxd-9F-AWm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9x-Ih-bJF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1682" y="10"/>
         </scene>
         <!--Item-->
         <scene sceneID="C9I-Sn-DDf">
@@ -103,6 +119,7 @@
         <scene sceneID="QmH-K9-jdE">
             <objects>
                 <tabBarController storyboardIdentifier="main" title="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZEd-Nz-G0c" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vin-LC-cfs"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rjG-AH-wV0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

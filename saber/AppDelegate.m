@@ -20,7 +20,9 @@
 {
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 
-  ViewController* view =[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"main"];
+  ViewController* view;
+  //view =[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"main"];
+  view =[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
   
   self.window.rootViewController = view;
   [self.window makeKeyAndVisible];
