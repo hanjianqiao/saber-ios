@@ -30,8 +30,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="P1q-Dh-fQQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="FNO-9j-9sg"/>
-                    <navigationItem key="navigationItem" id="Va6-jj-MR9"/>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="afj-0d-PVx"/>
+                    <navigationItem key="navigationItem" id="uP9-WZ-MOj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P8-HL-rMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -109,7 +110,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="G3l-W5-bvP" kind="relationship" relationship="viewControllers" id="Dxn-Ed-Chv"/>
-                        <segue destination="Skg-Gb-D0J" kind="relationship" relationship="viewControllers" id="dQt-uq-yh2"/>
+                        <segue destination="nLu-ML-ogN" kind="relationship" relationship="viewControllers" id="Ch6-Dd-IJT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j8C-Y9-qSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -117,4 +118,7 @@
             <point key="canvasLocation" x="-622" y="11"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ch6-Dd-IJT"/>
+    </inferredMetricsTieBreakers>
 </document>

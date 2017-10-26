@@ -19,6 +19,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSLog(@"High Score Button Pressed");
+    NSURL *jsCodeLocation;
+    
+# if 1
+    // get bundle file from server
+    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/2.bundle?platform=ios"];
+# else
+    // if choose this bundle file run command at project root:
+    // react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/main.jsbundle
+    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"2" withExtension:@"jsbundle"];
+# endif
+    
+    RCTRootView *rootView =
+    [[RCTRootView alloc] initWithBundleURL: jsCodeLocation
+                                moduleName: @"saber"
+                         initialProperties:
+     @{
+       @"scores" : @[
+               @{
+                   @"name" : @"Alex",
+                   @"value": @"42"
+                   },
+               @{
+                   @"name" : @"Joel",
+                   @"value": @"10"
+                   }
+               ]
+       }
+                             launchOptions: nil];
+    //UIViewController *vc = [[UIViewController alloc] init];
+    self.view = rootView;
+    //[self presentViewController:vc animated:YES completion:nil];
+    //[self.navigationController pushViewController:vc animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
