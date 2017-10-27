@@ -13,6 +13,7 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* saberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* saberTests.m */; };
+		0733786F1FA2DB650029E3A9 /* BackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0733786E1FA2DB650029E3A9 /* BackManager.m */; };
 		076DCF071F9E627300E8F59A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DCF061F9E627300E8F59A /* ViewController2.m */; };
 		076DCF2B1F9E638300E8F59A /* 1.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 076DCF291F9E638300E8F59A /* 1.jsbundle */; };
 		076DCF2C1F9E638300E8F59A /* 2.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 076DCF2A1F9E638300E8F59A /* 2.jsbundle */; };
@@ -310,6 +311,8 @@
 		00E356EE1AD99517003FC87E /* saberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = saberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* saberTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = saberTests.m; sourceTree = "<group>"; };
+		0733786E1FA2DB650029E3A9 /* BackManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BackManager.m; path = saber/BackManager.m; sourceTree = "<group>"; };
+		073378911FA2DB890029E3A9 /* BackManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BackManager.h; path = saber/BackManager.h; sourceTree = "<group>"; };
 		076DCF051F9E627300E8F59A /* ViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController2.h; path = saber/ViewController2.h; sourceTree = "<group>"; };
 		076DCF061F9E627300E8F59A /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = saber/ViewController2.m; sourceTree = "<group>"; };
 		076DCF291F9E638300E8F59A /* 1.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.jsbundle; sourceTree = "<group>"; };
@@ -478,6 +481,8 @@
 				07EA53911FA2536B004C4804 /* JarvisViewController.m */,
 				07EA53931FA2537E004C4804 /* MagusViewController.h */,
 				07EA53941FA2537E004C4804 /* MagusViewController.m */,
+				0733786E1FA2DB650029E3A9 /* BackManager.m */,
+				073378911FA2DB890029E3A9 /* BackManager.h */,
 			);
 			name = main;
 			sourceTree = "<group>";
@@ -1107,6 +1112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07EA53951FA2537E004C4804 /* MagusViewController.m in Sources */,
+				0733786F1FA2DB650029E3A9 /* BackManager.m in Sources */,
 				07B503251F99BF160032B791 /* ViewController.m in Sources */,
 				07EA536E1FA2535B004C4804 /* SefirotViewController.m in Sources */,
 				076DCF071F9E627300E8F59A /* ViewController2.m in Sources */,

@@ -19,13 +19,48 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view.
+    NSURL *jsCodeLocation;
   [self.navigationController setNavigationBarHidden:true];
+# if 1
+    // get bundle file from server
+    jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/2.bundle?platform=ios"];
+# else
+    // if choose this bundle file run command at project root:
+    // react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/main.jsbundle
+    jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"2" withExtension:@"jsbundle"];
+# endif
+    
+    RCTRootView *rootView =
+    [[RCTRootView alloc] initWithBundleURL: jsCodeLocation
+                                moduleName: @"saber"
+                         initialProperties:
+     @{
+       @"scores" : @[
+               @{
+                   @"name" : @"Alex",
+                   @"value": @"42"
+                   },
+               @{
+                   @"name" : @"Joel",
+                   @"value": @"10"
+                   }
+               ]
+       }
+                             launchOptions: nil];
+    UIViewController *vc = [[UIViewController alloc] init];
+    self.view = rootView;
+  //[self.navigationController setNavigationBarHidden:true];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)onBackPressed{
+  [self.navigationController popViewControllerAnimated:true];
+}
+
 - (IBAction)click:(UIButton *)sender {
     NSLog(@"High Score Button Pressed");
     NSURL *jsCodeLocation;
