@@ -17,6 +17,7 @@
 		076DCF071F9E627300E8F59A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DCF061F9E627300E8F59A /* ViewController2.m */; };
 		076DCF2B1F9E638300E8F59A /* 1.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 076DCF291F9E638300E8F59A /* 1.jsbundle */; };
 		076DCF2C1F9E638300E8F59A /* 2.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 076DCF2A1F9E638300E8F59A /* 2.jsbundle */; };
+		07A64E2B1FA8238900B78CC8 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 07A64E2A1FA8238900B78CC8 /* assets */; };
 		07B503131F99BE360032B791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B503121F99BE360032B791 /* Main.storyboard */; };
 		07B503141F99BE360032B791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B503121F99BE360032B791 /* Main.storyboard */; };
 		07B503151F99BE360032B791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B503121F99BE360032B791 /* Main.storyboard */; };
@@ -317,6 +318,7 @@
 		076DCF061F9E627300E8F59A /* ViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController2.m; path = saber/ViewController2.m; sourceTree = "<group>"; };
 		076DCF291F9E638300E8F59A /* 1.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.jsbundle; sourceTree = "<group>"; };
 		076DCF2A1F9E638300E8F59A /* 2.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.jsbundle; sourceTree = "<group>"; };
+		07A64E2A1FA8238900B78CC8 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		07B503121F99BE360032B791 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = saber/Main.storyboard; sourceTree = "<group>"; };
 		07B503231F99BF160032B791 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = saber/ViewController.h; sourceTree = "<group>"; };
 		07B503241F99BF160032B791 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = saber/ViewController.m; sourceTree = "<group>"; };
@@ -510,6 +512,7 @@
 		13B07FAE1A68108700A75B9A /* saber */ = {
 			isa = PBXGroup;
 			children = (
+				07A64E2A1FA8238900B78CC8 /* assets */,
 				07B502E71F99BDDD0032B791 /* stories */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1042,6 +1045,7 @@
 				076DCF2B1F9E638300E8F59A /* 1.jsbundle in Resources */,
 				076DCF2C1F9E638300E8F59A /* 2.jsbundle in Resources */,
 				07B503131F99BE360032B791 /* Main.storyboard in Resources */,
+				07A64E2B1FA8238900B78CC8 /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);

@@ -35,7 +35,7 @@
     jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/2.bundle?platform=ios"];
 # else
     // if choose this bundle file run command at project root:
-    // react-native bundle --platform ios --dev false --entry-file index.js --bundle-output ios/main.jsbundle
+    // react-native bundle --platform ios --dev false --entry-file 1.js --assets-dest ./saber-ios --bundle-output saber-ios/1.jsbundle
     jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"2" withExtension:@"jsbundle"];
 # endif
     
