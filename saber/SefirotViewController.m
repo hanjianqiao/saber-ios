@@ -9,6 +9,7 @@
 #import "SefirotViewController.h"
 
 @interface SefirotViewController ()
+@property (weak, nonatomic) IBOutlet WKWebView *webView;
 
 @end
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+  NSURL *url = [NSURL URLWithString:@"https://www.baidu.com/"];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+
+    WKWebViewConfiguration *theConfiguration =
+    [[WKWebViewConfiguration alloc] init];
+    [theConfiguration.userContentController
+     addScriptMessageHandler:self name:@"interOp"];
+
+  [_webView loadRequest:request];
+  [self.view addSubview:_webView];
+
 }
 
 - (void)didReceiveMemoryWarning {

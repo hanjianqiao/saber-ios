@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 
-@interface SefirotViewController : UIViewController
+@interface SefirotViewController : UIViewController <WKScriptMessageHandler>
 
 @end
