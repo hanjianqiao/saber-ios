@@ -15,8 +15,6 @@
 		00E356F31AD99517003FC87E /* saberTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* saberTests.m */; };
 		0733786F1FA2DB650029E3A9 /* BackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0733786E1FA2DB650029E3A9 /* BackManager.m */; };
 		076DCF071F9E627300E8F59A /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 076DCF061F9E627300E8F59A /* ViewController2.m */; };
-		076DCF2B1F9E638300E8F59A /* 1.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 076DCF291F9E638300E8F59A /* 1.jsbundle */; };
-		076DCF2C1F9E638300E8F59A /* 2.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 076DCF2A1F9E638300E8F59A /* 2.jsbundle */; };
 		07A64E2B1FA8238900B78CC8 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 07A64E2A1FA8238900B78CC8 /* assets */; };
 		07B503131F99BE360032B791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B503121F99BE360032B791 /* Main.storyboard */; };
 		07B503141F99BE360032B791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07B503121F99BE360032B791 /* Main.storyboard */; };
@@ -1102,8 +1100,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076DCF2B1F9E638300E8F59A /* 1.jsbundle in Resources */,
-				076DCF2C1F9E638300E8F59A /* 2.jsbundle in Resources */,
 				07B503131F99BE360032B791 /* Main.storyboard in Resources */,
 				07A64E2B1FA8238900B78CC8 /* assets in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
