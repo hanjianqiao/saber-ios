@@ -32,6 +32,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Sefirot" id="B0E-uw-yhZ"/>
                     <connections>
+                        <outlet property="view" destination="Z33-1s-XIi" id="x3j-Za-6ca"/>
                         <outlet property="webView" destination="941-a4-TeU" id="MFK-YF-OOA"/>
                     </connections>
                 </viewController>

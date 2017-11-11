@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <WebKit/WebKit.h>
 
-@interface SefirotViewController : UIViewController <WKScriptMessageHandler>
+@interface SefirotViewController : UIViewController <WKScriptMessageHandler, WKNavigationDelegate>
 
 @end

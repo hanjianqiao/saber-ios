@@ -47,7 +47,7 @@
                ]
        }
                              launchOptions: nil];
-    UIViewController *vc = [[UIViewController alloc] init];
+    //UIViewController *vc = [[UIViewController alloc] init];
     self.view = rootView;
   //[self.navigationController setNavigationBarHidden:true];
 }
