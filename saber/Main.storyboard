@@ -204,7 +204,7 @@
         <!--View Controller-->
         <scene sceneID="tX2-9V-DJA">
             <objects>
-                <viewController id="9L9-CB-t1f" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="safirot_webloader" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9L9-CB-t1f" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qp4-oG-rpU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

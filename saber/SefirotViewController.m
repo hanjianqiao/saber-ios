@@ -26,14 +26,16 @@
 - (void)webView:(WKWebView *)webView
 decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction
 decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler{
-  if([navigationAction.request.URL.absoluteString hasPrefix:@"https"]){
+  if([navigationAction.request.URL.absoluteString hasPrefix:@"https://"]){
     decisionHandler(WKNavigationActionPolicyAllow);
     NSLog(@"Load: %@", navigationAction.request.URL.absoluteString);
-  }else if([navigationAction.request.URL.absoluteString hasPrefix:@"http"]){
+  }else if([navigationAction.request.URL.absoluteString hasPrefix:@"http://"]){
     decisionHandler(WKNavigationActionPolicyCancel);
     NSLog(@"Not allow to load general web page: %@", navigationAction.request.URL.absoluteString);
   }else if([navigationAction.request.URL.absoluteString hasPrefix:@"safirot:openurl:"]){
-    decisionHandler(WKNavigationActionPolicyAllow);
+    decisionHandler(WKNavigationActionPolicyCancel);
+    UIViewController *safirot_webloader = [self.storyboard instantiateViewControllerWithIdentifier:@"safirot_webloader"];
+    [self.navigationController pushViewController:safirot_webloader animated:true];
     NSLog(@"Load: %@", navigationAction.request.URL.absoluteString);
   }else{
     decisionHandler(WKNavigationActionPolicyCancel);
